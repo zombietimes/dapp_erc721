@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Show the console window in the browser debugger.
+  img(src="/images/menu.png")
+  br
+  img(src="/images/menu2.png")
+  br
+  img(src="/images/console.png")
+  br
+  script(type='text/javascript',src='https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js')
+  script(type='text/javascript',src='https://cdn.jsdelivr.net/npm/loom-js@1.15.0/dist/loom.umd.js')
+  script(type='text/javascript',src='/javascripts/abiJson_asset721.js')
+  script(type='text/javascript',src='/javascripts/config.js')
+  script(type='text/javascript',src='/javascripts/accessor_web3_client.js')
+  script(type='text/javascript',src='/javascripts/run_asset721.js')
+
+
