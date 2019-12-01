@@ -49,6 +49,12 @@ cd ~/dapps/deploy/by_truffle
 truffle migrate --reset --network ganache
 
 echo "\n<Setup>"
+echo "Generate the abi json file for the express project."
+echo "\n"
+cd $PATH_EXPRESS/$CONTRACT_NAME_LOWER/public/javascripts
+node ./toAbiJson_$CONTRACT_NAME_LOWER.js
+
+echo "\n<Setup>"
 echo "Run truffle console to access to Ganache."
 echo ""
 echo "[Enter] to continue."
